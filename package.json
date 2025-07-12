@@ -1,0 +1,44 @@
+{
+    "name": "The_Joker",
+    "version": "1.0.0",
+    "module": "commonjs",
+    "main": "dist/index.js",
+    "scripts": {
+        "dev": "ts-node-dev --respawn --require tsconfig-paths/register --project tsconfig.json src/index.ts",
+        "build": "tsc",
+        "start": "node --enable-source-maps -r tsconfig-paths/register dist/index.js"
+    },
+    "author": "akshat-rauthan",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.10.0",
+        "bcrypt": "^6.0.0",
+        "body-parser": "^2.2.0",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
+        "dotenv": "^16.5.0",
+        "express": "^5.1.0",
+        "express-rate-limit": "^7.5.0",
+        "express-validator": "^7.2.1",
+        "http-status-codes": "^2.3.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.16.0",
+        "multer": "^2.0.1",
+        "uuid": "^11.1.0"
+    },
+    "devDependencies": {
+        "@types/bcrypt": "^5.0.2",
+        "@types/cookie-parser": "^1.4.9",
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.3",
+        "@types/jsonwebtoken": "^9.0.10",
+        "@types/multer": "^2.0.0",
+        "@types/node": "^24.0.10",
+        "@types/uuid": "^10.0.0",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.8.3"
+    },
+    "description": ""
+}
